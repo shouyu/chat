@@ -1,0 +1,246 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+  font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+h1 {
+  font-family: Helvetica, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0px;
+}
+
+#wrapper {
+  position: absolute;
+  top: 10px;
+  bottom:10px;
+  left: 30px;
+  right: 30px;
+}
+.switchchannel {
+}
+.leavebutton {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  margin-top: -9px;
+}
+.unread {
+  position: absolute;
+  right: 28px;
+  top: 50%;
+  margin-top: -9px; 
+}
+.online li, .offline li {
+  background-image: url(images/ui-icons_ff0084_256x240.png);
+  background-position: -144px -96px;
+  padding: 0 0 0 16px;
+}
+.online .ui-icon {
+  background-image: url(images/ui-icons_217bc0_256x240.png);
+  float: left;
+}
+.offline .ui-icon {
+  background-image: url(images/ui-icons_cd0a0a_256x240.png);
+  float: left;
+}
+.online {
+  color: black;
+}
+.offline {
+  color: gray;
+}
+.current {
+  font-weight: bold;
+}
+/* remove padding and scrolling from elements that contain an Accordion OR a content-div */
+.ui-layout-center , /* has content-div */
+.ui-layout-west,
+.ui-layout-east ,{
+  padding: 0;
+  overflow: hidden;
+}
+
+.ui-layout-north div.ui-widget-header {
+  padding: 7px 10px;
+  margin-bottom: 5px;
+}
+
+.ui-layout-east h4 { /* Footer in East-pane */
+  font-size:    0.9em;
+  font-weight:  normal;
+  border-width: 1px 0 0;
+}
+.ui-accordion-icon {
+  display: block;
+  text-indent: -99999px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  background-image: url(images/ui-icons_cd0a0a_256x240.png);
+}
+h3,
+h4 {
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 1.1em;  
+}
+
+#channels {
+  overflow-x: hidden;
+}
+
+#channels * {
+  overflow-x: hidden;
+}
+
+#channels .ui-accordion-content {
+  padding: 0.5em 1.2em;
+}
+
+#channeljoin input[type="text"] {
+  height: 20px;
+}
+
+#channeljoin input[type=submit] {
+  padding: 2px 1em;
+}
+
+#chatbox {
+  position: relative;
+}
+#chat {
+  padding: 0px 0px;
+}
+#chat textarea, #chat input {
+  font-size: 1.2em;
+}
+#chat textarea {
+  vertical-align: top;
+  margin:0;
+  border: 1px solid silver;
+  padding: 2px;
+  height: 80px;
+}
+
+#chat textarea.hint {
+  color: gray;
+}
+
+#chat input[type="submit"] {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  width: 60px;
+}
+
+#toolbar {
+  padding: 1px 4px;
+}
+
+#memolist {
+  padding: 4px;
+}
+
+#memolist div {
+  margin-bottom: 4px;
+  padding: 2px 4px;
+}
+
+#memolist p {
+  margin: 0;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#memodate {
+  padding: 2px;
+}
+
+#memouser {
+  padding: 0 2px 0 2px;
+}
+
+#memobody {
+  padding: 0 5px 0 5px;
+}
+
+#memobody p {
+  margin: 0;
+}
+
+#editmemo-dialog label {
+  display:block;
+}
+
+#editmemo-dialog textarea {
+  width: 98%;
+  height: 80%;
+}
+
+#span.leavebutton {
+  z-index: 100;
+}
+
+#content {
+  font-size: 1.2em;
+}
+
+#content p {
+  line-height: 1.2;
+  margin: 0;
+  word-break: break-all;
+}
+
+#content p img {
+  max-width: 100%;
+  max-height: 200px;
+}
+
+#content > div {
+  padding: 5px 0px;
+}
+
+.chanmessage {
+  padding: 5px 10px 5px 10px;
+  overflow: hidden;
+  color: gray;
+  border-bottom: 1px solid silver;
+}
+
+.message {
+  padding: 5px 10px 5px 10px;
+  overflow: hidden;
+  border-bottom: 1px solid silver;
+}
+
+.speaker {
+  font-family: Helvetica, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  color: #444;
+}
+
+.timestamp {
+  float: right;
+  font-size: 0.8em;
+}
+
+.message .text {
+  clear: both;
+  margin: 0 0 0 18px;
+}
