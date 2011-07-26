@@ -318,6 +318,12 @@ function connect() {
       $('#member_' + data.channel + ' .user-' + data.userid).remove();
   });
   
+  socket.on('invite', function(data) {
+    socket.emit('join', {
+        channel: data
+    }); 
+  });
+  
   socket.on('userdisconnect', function(data) {
       var date = new Date(data.date);
       var msg = $('<div />').addClass('chanmessage');
